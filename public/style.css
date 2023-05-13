@@ -24,6 +24,28 @@ main {
   height: 100vh;
 }
 
+.infoBtn {
+  color: #7F9C96;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem;
+}
+
+.info {
+  display: none;
+}
+
+.open,
+.close {
+  padding: 0;
+  margin-left: -0.5rem;
+}
+
+.info,
 .card { 
   background: linear-gradient(90deg, #80FF72 0%, #FFF07C 100%);  
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);    
@@ -34,6 +56,12 @@ main {
   justify-content: center;
   width: 25rem;
   height: 15rem;
+}
+
+.info {
+  cursor: default;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 .quote {  
