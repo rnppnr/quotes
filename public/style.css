@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #FFF07C;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card { 
+  background: linear-gradient(90deg, #80FF72 0%, #FFF07C 100%);  
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);    
+  border-radius: 10px;
+  cursor: pointer; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  height: 15rem;
+}
+
+.quote {  
+  text-align: left;
+  padding: 0 1rem;
+} 
+
+.text {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.author {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-right: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.quote-text-centered {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 20rem;
+    height: 12rem;
+  }
+}
